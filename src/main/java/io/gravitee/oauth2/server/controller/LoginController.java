@@ -20,6 +20,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * 
+ * @author Titouan COMPIEGNE
+ *
+ */
 @Controller
 public class LoginController {
 	
@@ -33,7 +38,7 @@ public class LoginController {
 			model.addObject("error", "Invalid username and password!");
 		}
 		if (logout != null) {
-			model.addObject("msg", "You've been logged out successfully.");
+			model.addObject("logout", "You've been logged out successfully.");
 		}
 		model.setViewName("login");
 		return model;

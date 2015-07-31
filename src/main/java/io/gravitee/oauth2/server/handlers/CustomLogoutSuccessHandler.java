@@ -14,6 +14,7 @@
  *******************************************************************************/
 package io.gravitee.oauth2.server.handlers;
 
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -22,6 +23,8 @@ import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuc
 /**
  * Same as {@link SimpleUrlLogoutSuccessHandler} but retrieve targetUrl form the request target_url parameter
  *
+ * @author Titouan COMPIEGNE
+ * 
  */
 public class CustomLogoutSuccessHandler extends SimpleUrlLogoutSuccessHandler{
 
