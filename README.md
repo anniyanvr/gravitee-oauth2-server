@@ -40,7 +40,7 @@ Resource Owner Password Grant Type :
 
 =============== =================================================
 Request         POST /oauth/token
-Request Body    grant_type=password&client_id=test&client_secret=test&username=userTest&password=userTest
+Request Body    grant_type=password&client_id=test&client_secret=test&username=user&password=password
 Response Codes  200 OK
 Response Body   ::
 
@@ -126,7 +126,7 @@ Response Codes  200 OK
 Response Body   ::
                 {
 				    "exp": 1426391913,
-				    "user_name": "userTest",
+				    "user_name": "user",
 				    "scope": [
 				        "read",
 				        "write"
@@ -150,7 +150,7 @@ Response Codes  200 OK
 Response Body   ::
                {
 				    "password": null,
-				    "username": "userTest",
+				    "username": "user",
 				    "authorities": [
 				        {
 				            "authority": "ROLE_USER"
