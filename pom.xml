@@ -10,6 +10,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.gravitee</groupId>
+		<artifactId>gravitee-parent</artifactId>
+		<version>2</version>
+	</parent>
 	<groupId>io.gravitee.oauth2.server</groupId>
 	<artifactId>gravitee-oauth2-server</artifactId>
 	<packaging>war</packaging>
